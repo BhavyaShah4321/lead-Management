@@ -1,4 +1,4 @@
-# Leads Tracking Application
+` Leads Tracking Application
 
 ## Overview
 
@@ -120,6 +120,21 @@ cp .env.example .env   # REACT_APP_API_URL=http://localhost:5000/api
 npm install
 npm start              # opens the app at http://localhost:3000
 ```
+
+## Demo Data
+
+The project includes a seed script with sample Leads and Notes so you can test the application immediately.
+
+**⚠️ Warning:** Running the seed script will delete all existing leads and notes in your database.
+
+```bash
+cd server
+npm run seed
+```
+
+This will create:
+- 10 demo leads with various statuses (new, contacted, qualified, lost)
+- 8 demo notes attached to specific leads
 
 ## API Overview
 
